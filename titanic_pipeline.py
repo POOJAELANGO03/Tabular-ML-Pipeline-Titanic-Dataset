@@ -1,24 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════════════╗
-║        TITANIC SURVIVAL — TABULAR ML PIPELINE                   ║
-║  Sections:                                                       ║
-║   1. Data Loading & Exploration                                  ║
-║   2. Preprocessing (missing values, encoding)                    ║
-║   3. Train/Validation Split                                      ║
-║   4. Model Training (Logistic Regression + Random Forest)        ║
-║   5. Evaluation (Accuracy, F1, AUC, Confusion Matrix)           ║
-║   6. Feature Importance (Top 5)                                  ║
-║   7. Prediction Interpretation (2 example rows)                  ║
-║   8. Conclusion                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-
-NOTE on dataset:
-  This CSV is Kaggle's Titanic *test* split. In it, every male died
-  and every female survived — a known artifact of this particular
-  file that causes perfect model scores if Sex is used as a feature.
-  We intentionally DROP Sex and let Pclass, Fare, Age, FamilySize,
-  and Embarked do the real predictive work.
-"""
 
 import pandas as pd
 import numpy as np
